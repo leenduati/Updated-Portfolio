@@ -37,6 +37,11 @@
 
 <body>
 
+
+
+
+
+
     <!-- ======= Mobile nav toggle button ======= -->
     <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
     <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
@@ -118,13 +123,35 @@
                                     <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>Thursday, 23rd November 1995</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span></span><a href="https://www.linkedin.com/redir/redirect?url=https%3A%2F%2Ft%2Eco%2FM1Cwfjaiur%3Famp%3D1&urlhash=Kruh&trk=public_profile_website" target="_blank"
                                             rel="noopener">My First Website</a></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Languages:</strong> <span>English, Swahili, Sheng', German</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+254 728 055159</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Nairobi, Kenya</span></li>
                                 </ul>
                             </div>
                             <div class="col-lg-6">
                                 <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>26</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>
+
+                                    <!-- Script to calculate age difference instead of manually updating it -->
+                                        <script type="text/javascript">
+                                            function diff_year_month_day(dt1, dt2) {
+                                
+                                                var time = (dt2.getTime() - dt1.getTime()) / 1000;
+                                                var year = Math.abs(Math.round((time / (60 * 60 * 24)) / 365.25));
+                                                var month = Math.abs(Math.round(time / (60 * 60 * 24 * 7 * 4)));
+                                                var days = Math.abs(Math.round(time / (3600 * 24)));
+                                                return year + " Years";
+                                
+                                            }
+                                
+                                            dt1 = new Date("1995-11-23");
+                                            dt2 = new Date();
+                                
+                                            var diff_year_month_day = diff_year_month_day(dt1, dt2)
+                                            document.write(diff_year_month_day);
+                                        </script>
+
+                                    </span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BSc in Mechatronics</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>leenduati21@gmail.com</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
