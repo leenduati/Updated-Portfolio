@@ -1266,3 +1266,53 @@ section {
     text-align: left;
     justify-content: flex-start;
 } */
+
+
+.language {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    .language:hover {
+      transform: scale(1.02);
+    }
+    .language-name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+    .language-name span:first-child {
+      font-weight: bold;
+    }
+    .progress-bar {
+      width: 100%;
+      background-color: #e0e0e0;
+      border-radius: 20px;
+      height: 12px;
+      overflow: hidden;
+    }
+    .progress {
+      height: 100%;
+      background-color: #0a66c2; /* LinkedIn Blue */
+      width: 0%;
+      border-radius: 20px;
+      transition: width 1s ease;
+    }
+    .level-C2 .progress { width: 100%; }
+    .level-C1 .progress { width: 85%; }
+    .level-B2 .progress { width: 70%; }
+    .level-B1 .progress { width: 55%; }
+    .level-A2 .progress { width: 40%; }
+    .level-A1 .progress { width: 25%; }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .language-name {
+        font-size: 14px;
+      }
+    }
